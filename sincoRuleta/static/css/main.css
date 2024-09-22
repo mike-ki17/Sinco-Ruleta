@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: green;
+  background: rgb(12, 102, 106);
+  background: linear-gradient(
+    0deg,
+    rgba(12, 102, 106, 1) 2%,
+    rgba(50, 128, 184, 1) 45%,
+    rgba(0, 51, 94, 1) 100%
+  );
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ruleta {
+  /* width: 100vw;
+  height: 0vh; */
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

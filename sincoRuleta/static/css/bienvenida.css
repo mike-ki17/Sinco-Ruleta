@@ -1,0 +1,50 @@
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+:root{
+    --cinco-blanco: #fff 
+}
+
+.container-bienvenida {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/Fondo\ opciones_Mesa\ de\ trabajo\ 1\ copia\ 2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.container-botones{
+    display: flex;
+    justify-content:center ;
+    align-items:center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container-botones img {
+  width: 400px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+.container-botones h2{
+    font-size: 45px;
+    color:var(--cinco-blanco);
+}

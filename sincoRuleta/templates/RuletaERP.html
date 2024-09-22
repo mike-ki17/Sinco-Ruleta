@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta ERP</title>
+    <link rel="stylesheet" href="../static/css/ruletaERP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container-ruleta" id="sec-ruleta-ACADEMI">
+        <div class="container-show-item" id="itemShow">
+            <div class="item">
+                <h1>Formulario</h1>
+                <form action="/insertar" method="POST">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+
+                    <input type="text" id="empresa" name="empresa" placeholder="Empresa" required>
+
+                    <input type="text" id="premio" name="premio" placeholder="Premio" required>
+
+                    <input type="email" id="correo" name="correo" placeholder="Correo Electronico" required>
+
+                    <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+
+                    <input type="submit" value="Enviar">
+                    <button id="btn-show-item">cerrar</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="ruleta">
+            <div class="logo-Academni">
+                <a href="./">
+                    <img class="animate__animated animate__bounceIn animate__delay-0.5s"
+                        src="../static/image/Logo SINCO ERP blanco.png" alt="">
+                </a>
+            </div>
+            <div class="container-img-ruleta animate__animated animate__bounceIn animate__delay-0.5s" >
+                <img id="btn-rule-ERP"
+                    src="../static/image/Ruleta SINCO Academic-04.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="sonido" style="display: none;">
+        <iframe src="../static/sonido/ruleta.mp3" id="audio"></iframe>
+    </div>
+    <script src="../static/js/ruleta-erp.js"></script>
+</body>
+
+</html>
