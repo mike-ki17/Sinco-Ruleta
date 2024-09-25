@@ -44,15 +44,17 @@ body {
 }
 
 .logo-Academni img{
-    margin: 30px;
-    width: 200px;
+  margin: 30px;
+  width: 50%;
 }
+
 
 .container-img-ruleta{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    position: relative;
 }
 
 .container-img-ruleta img{
@@ -93,10 +95,11 @@ form{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 90%;
 }
 
 .item {
-  width: 300px;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,4 +134,43 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+
+
+.selecionador{
+  width: 10px;
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top:-20px;
+  z-index: 400;
+}
+
+
+
+.terminos-condiciones{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.terminos-condiciones p{
+  width: 60%;
+  margin: 15px;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 462px) {
+  .terminos-condiciones p{
+    color: #fff;
+    font-size: 10px;
+  }
 }

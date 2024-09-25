@@ -4,12 +4,14 @@ import mysql.connector
 # Crear una instancia de la aplicación Flask
 app = Flask(__name__)
 
-db_config = {
-    'user': 'mike',
-    'password': 'sincoDesarrollo@123',
-    'host': 'localhost',
-    'database': 'sincoRegistrados'
-}
+# db_config = {
+#     'user': 'mike',
+#     'password': 'sincoDesarrollo@123',
+#     'host': 'localhost',
+#     'database': 'sincoRegistrados'
+# }
+
+
 
 app.secret_key = '123mikepro'
 

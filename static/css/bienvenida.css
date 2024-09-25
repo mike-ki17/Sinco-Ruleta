@@ -39,9 +39,16 @@ body {
 }
 
 .container-botones img {
-  width: 400px;
-  margin-top: 80px;
+  /* width: 400px; */
+  width: 90%;
   cursor: pointer;
+}
+
+.container-botones a{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 80px;
 }
 
 .container-botones h2{

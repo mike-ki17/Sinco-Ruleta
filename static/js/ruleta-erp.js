@@ -18,10 +18,13 @@ function cerrar() {
 }
 
 function premio(premios) {
-  setTimeout(() => {
-    itemShow.style.display = "flex";
-  }, 500);
-  let premioSinco = document.getElementById("premio").value = premios;
+  if(premios !== 'Vuelve a intentarlo una vez más'){
+    setTimeout(() => {
+      itemShow.style.display = "flex";
+    }, 3000);
+    let premioSinco = document.getElementById("premio").value = premios;
+  }
+  
 }
 
 
@@ -31,43 +34,43 @@ function calcular(rand) {
   setTimeout(() => {
     switch (true) {
       case valor > 0 && valor <= 15:
-        premio("Vuelve a intentarlo");
+        premio("Vuelve a intentarlo una vez más");
         break;
       case valor > 15 && valor <= 45:
-        premio("Descuento del 50% por modulo");
+        premio("Nueva agenda SINCO ERP");
         break;
       case valor > 45 && valor <= 75:
-        premio("Descuento del 25% por modulo");
+        premio("5 usuarios adicionales sin costo por cada año");
         break;
       case valor > 75 && valor <= 105:
-        premio("Curso gratis - 1 Submódulo");
+        premio("15% de descuento en arrendamiento de SRM");
         break;
       case valor > 105 && valor <= 135:
-        premio("Curso gratis - 1 Módulo");
+        premio("20% de descuento en implementacio de modulos");
         break;
       case valor > 135 && valor <= 165:
-        premio("Descuento del 40% por modulo");
+        premio("2 horas de consultorias gratis ");
         break;
       case valor > 165 && valor <= 195:
-        premio("Vuelve a intentarlo");
+        premio("3 horas de consultorias gratis");
         break;
       case valor > 195 && valor <= 225:
-        premio("Descuento del 50% por modulo");
+        premio("30% de descuento en implementacion de modulos nuevos (no acumulable con otras ofertas)");
         break;
       case valor > 225 && valor <= 255:
-        premio("Descuento del 25% por modulo");
+        premio("20% de descuento en arrendamiento de SRM");
         break;
       case valor > 255 && valor <= 285:
-        premio("Curso gratis - 1 Submódulo");
+        premio("20 GB adicionales para SGD");
         break;
       case valor > 285 && valor <= 315:
-        premio("Curso gratis - 1 Módulo");
+        premio("25% de descuento en el valor de la hora de capacitaciones con consultor");
         break;
       case valor > 315 && valor <= 345:
-        premio("Descuento del 40% por modulo");
+        premio("Dos sociedades adicionales sin costo de licenciamiento");
         break;
       case valor > 345 && valor <= 360:
-        premio("Vuelve a intentarlo");
+        premio("Vuelve a intentarlo una vez más");
         break;
     }
   }, 5000);

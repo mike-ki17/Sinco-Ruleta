@@ -18,10 +18,14 @@ function cerrar() {
 }
 
 function premio(premios) {
-  setTimeout(() => {
-    itemShow.style.display = "flex";
-  }, 500);
-  let premioSinco = document.getElementById("premio").value = premios;
+  if(premios !== 'Vuelve a intentarlo')
+  {
+    setTimeout(() => {
+      itemShow.style.display = "flex";
+    }, 3000);
+    let premioSinco = document.getElementById("premio").value = premios;
+  }
+ 
 }
 
 function calcular(rand) {
